@@ -1,4 +1,4 @@
-import data from '../lib/Batas_Wilayah_KelurahanDesa_10K_AR.json' assert { type: 'json' };
+// import data from '../lib/Batas_Wilayah_KelurahanDesa_10K_AR.json' assert { type: 'json' };
 
 // Add an event listener to each marker to open the modal window when clicked
 function onMarkerClick() {
@@ -24,7 +24,6 @@ var mymap = L.map('map', { zoomControl: true }).setView([-7.3283, 108.3570, 108.
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 }).addTo(mymap);
-L.geoJSON(data).addTo(mymap)
 
 // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -154,37 +153,37 @@ function openModal(
 }
 
 
-// mark.forEach((item) => {
-//     let locArray = item.loc.split(',').map(parseFloat);
-//     let latitude = locArray[0];
-//     let longitude = locArray[1];
-//     let bencana = item.bencana;
-//     let kabupaten = item.kabupaten;
-//     let lokasiKejadian = item.lokasiKejadian;
-//     let waktuKejadian = item.waktuKejadian;
-//     let waktuTerimaLaporan = item.waktuTerimaLaporan;
-//     let kerusakanFasilitas = item.kerusakanFasilitas;
-//     let rusakSedang = item.rusakSedang;
-//     let terdampak = item.terdampak;
-//     let link = item.link;
-//     L.marker([latitude, longitude], { icon: icon })
-//         .bindPopup(`
-//             <h6>${bencana} <br> ${waktuKejadian}</h6>
-//             <button onclick="openModal(
-//                 '${bencana}', 
-//                 '${kabupaten}', 
-//                 '${lokasiKejadian}', 
-//                 '${waktuKejadian}', 
-//                 '${waktuTerimaLaporan}', 
-//                 '${kerusakanFasilitas}', 
-//                 '${rusakSedang}', 
-//                 '${terdampak}', 
-//                 '${link}'
-//             )" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Lihat</button>
-//         `)
-//         .addTo(mymap)
-//         .openPopup();
-// });
+mark.forEach((item) => {
+    let locArray = item.loc.split(',').map(parseFloat);
+    let latitude = locArray[0];
+    let longitude = locArray[1];
+    let bencana = item.bencana;
+    let kabupaten = item.kabupaten;
+    let lokasiKejadian = item.lokasiKejadian;
+    let waktuKejadian = item.waktuKejadian;
+    let waktuTerimaLaporan = item.waktuTerimaLaporan;
+    let kerusakanFasilitas = item.kerusakanFasilitas;
+    let rusakSedang = item.rusakSedang;
+    let terdampak = item.terdampak;
+    let link = item.link;
+    L.marker([latitude, longitude], { icon: icon })
+        .bindPopup(`
+            <h6>${bencana} <br> ${waktuKejadian}</h6>
+            <button onclick="openModal(
+                '${bencana}', 
+                '${kabupaten}', 
+                '${lokasiKejadian}', 
+                '${waktuKejadian}', 
+                '${waktuTerimaLaporan}', 
+                '${kerusakanFasilitas}', 
+                '${rusakSedang}', 
+                '${terdampak}', 
+                '${link}'
+            )" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Lihat</button>
+        `)
+        .addTo(mymap)
+        .openPopup();
+});
 
 // mark.forEach((item) => {
 //     let locArray = item.loc.split(',').map(parseFloat);
