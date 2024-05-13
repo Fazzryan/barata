@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARATA</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="asset/lib/Batas_Wilayah_KelurahanDesa_10K_AR.js"></script>
+    <!-- Replace path/to/your/geojson/file.js with the path to your converted JSON file -->
+
+    <script>
+        // Create a map centered at a specific location
+        var map = L.map('map').setView([-7.35, 108.22], 10);
+
+        // Add base tile layer (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        // Tambahkan layer GeoJSON Kabupaten Tasikmalaya
+
+        // Add your GeoJSON data
+        // var geojsonLayer = L.geoJSON(data, {
+        //     onEachFeature: function (feature, layer) {
+        //         if (feature.properties && feature.properties.WADMKD && feature.properties
+        //             .WADMKK) { // Pastikan properti yang sesuai dengan data Anda
+        //             var popupContent = "<b>Desa:</b> " + feature.properties.WADMKD + "<br>" +
+        //                 "<b>Kab:</b> " + feature.properties.WADMKK;
+        //             layer.bindPopup(popupContent); // Gabungkan informasi nama dan waktu dalam satu popup
+        //         }
+        //     }
+        // }).addTo(map);
+        // Tambahkan data GeoJSON per desa
+        var perDesaLayer = L.geoJSON(data, {
+            style: function (feature) {
+                // Ganti warna fill berdasarkan atribut tertentu di dalam properti GeoJSON
+                // Misalnya, jika ada properti "warna" di dalam GeoJSON yang menentukan warna fill per desa
+                return {
+                    fillColor: feature.properties.warna ||
+                        'gray', // Jika tidak ada properti "warna", default menjadi warna abu
+                    weight: 1,
+                    opacity: 1,
+                    color: 'white',
+                    fillOpacity: 0.7
+                };
+            },
+            onEachFeature: function (feature, layer) {
+                // Jika Anda ingin menampilkan informasi popup untuk setiap desa
+                if (feature.properties && feature.properties.WADMKD) {
+                    var popupContent = "<b>Nama Desa:</b> " + feature.properties.WADMKD;
+                    layer.bindPopup(popupContent);
+                }
+            }
+        }).addTo(map);
+        // Replace yourGeoJSONData with the variable containing your GeoJSON data
+
+        // Optionally, you can customize the style of the GeoJSON layer
+        // geojsonLayer.setStyle({
+        //     fillColor: "#ff7800",
+        //     weight: 1,
+        //     opacity: 1,
+        //     color: 'white',
+        //     dashArray: '3',
+        //     fillOpacity: 0.7
+        // });
+        // Mendapatkan batas-batas geografis dari data GeoJSON
+        // Set batas-batas Kabupaten Tasikmalaya sebagai pembatas untuk peta
+        // var bounds = geojsonLayer.getBounds();
+        // map.setMaxBounds(bounds);
+        // map.on('drag', function () {
+        //     map.panInsideBounds(bounds, {
+        //         animate: false
+        //     });
+        // });
+    </script>
+
+</body>
+
+</html>
