@@ -4,7 +4,7 @@
 @stack('meta-seo')
 
 <!-- Favicons -->
-<link href="{{ asset('public/assets/fe/img/favicon.png') }}" rel="icon">
+<link href="{{ asset('public/assets/fe/img/a_logo_bpbdkabtasik.png') }}" rel="icon">
 <link href="{{ asset('public/assets/fe/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
 <!-- Google Fonts -->

@@ -1093,6 +1093,11 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
+    position: fixed;
+    height: 70px;
+    bottom: 0;
+    width: 100%;
+
     background: #fff;
     padding: 0 0 30px 0;
     color: #47536e;

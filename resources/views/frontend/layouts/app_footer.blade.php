@@ -67,7 +67,7 @@
 
 <div class="container py-4">
     <div class="copyright">
-        &copy; Copyright <strong><span>AppMaps</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>SIEBEN</span></strong>. All Rights Reserved
     </div>
     <div class="credits">
         Designed by <a href="https://bpbdkabtasikmalaya.id/">Ilman H Oriza, S.T</a>

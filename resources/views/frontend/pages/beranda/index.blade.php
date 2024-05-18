@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 @push('meta-seo')
-    <title>AppMaps - Beranda</title>
+    <title>SIEBEN - Beranda</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -11,7 +11,7 @@
 
         #map {
             width: 100%;
-            height: 85vh;
+            height: 86vh;
             border-radius: 10px;
             box-shadow: 0px 2px 14px -6px rgba(66, 68, 90, 1);
         }
