@@ -11,7 +11,7 @@
 
         #map {
             width: 100%;
-            height: 86vh;
+            height: 85vh;
             border-radius: 10px;
             box-shadow: 0px 2px 14px -6px rgba(66, 68, 90, 1);
         }
