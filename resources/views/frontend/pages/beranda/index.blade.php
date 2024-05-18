@@ -26,7 +26,8 @@
 <br>
 <section class="inner-page">
     <div class="container">
-        <div id="map" style="heigth:100%;width:100%"></div>
+        <div id="map"></div>
+        test
     </div>
 </section>
 @endsection

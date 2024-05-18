@@ -12,7 +12,7 @@ class ConBeranda extends Controller
     public function index(){
         $ConLeafletKabTasik = new ConLeafletKabTasik();
 
-        $json_leaflet_desa = $ConLeafletKabTasik->json_leaflet_desa();
+        $json_leaflet_desa = $ConLeafletKabTasik->json_leaflet_kecamatan();
 
         $data_desa = json_encode(array(
             "type"     => "FeatureCollection",
