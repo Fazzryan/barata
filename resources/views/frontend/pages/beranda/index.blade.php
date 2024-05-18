@@ -4,9 +4,9 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <link rel="stylesheet" href="{{ asset('assets/fe/vendor/leafletjs/leaflet.css') }}" />
+    <link rel="stylesheet" href="{{ asset('public/assets/fe/vendor/leafletjs/leaflet.css') }}" />
 
-    <script src="{{ asset('assets/fe/vendor/leafletjs/leaflet.js') }}"></script>
+    <script src="{{ asset('public/assets/fe/vendor/leafletjs/leaflet.js') }}"></script>
 @endpush
 @section('app_body')
     <!-- ======= Breadcrumbs Section ======= -->
@@ -31,7 +31,7 @@
 @endsection
 
 @push('js')
-    <script src="{{ asset('assets/fe/vendor/leafletjs/petadesa.js') }}"></script>
+    <script src="{{ asset('public/assets/fe/vendor/leafletjs/petadesa.js') }}"></script>
     <script type="text/javascript">
         var data = <?php echo $data_desa; ?>;
         // Create a map centered at a specific location
