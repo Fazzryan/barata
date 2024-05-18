@@ -10,7 +10,7 @@
 @endpush
 @section('app_body')
     <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
+    {{-- <section class="breadcrumbs">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <h2>Peta Bencana</h2>
@@ -20,13 +20,11 @@
                 </ol>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Breadcrumbs Section -->
     <br>
     <section class="inner-page">
-        <div class="container">
-            <div id="map"></div>
-        </div>
+        <div id="map"></div>
     </section>
 @endsection
 
