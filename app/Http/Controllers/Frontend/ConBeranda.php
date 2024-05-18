@@ -12,12 +12,7 @@ class ConBeranda extends Controller
     public function index(){
         $ConLeafletKabTasik = new ConLeafletKabTasik();
 
-        $json_leaflet_desa = $ConLeafletKabTasik->json_leaflet_kecamatan();
-
-        $data_desa = json_encode(array(
-            "type"     => "FeatureCollection",
-            "features" => $json_leaflet_desa,
-        ));
+        $data_desa = json_encode($ConLeafletKabTasik->getLeaflet_totalbencana_desa());
 
         return view('frontend.pages.beranda.index',compact('data_desa'));
     }
