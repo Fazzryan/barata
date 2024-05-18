@@ -7,3 +7,6 @@
 
 <!-- Template Main JS File -->
 <script src="{{asset('public/assets/fe/js/main.js')}}"></script>
+
+<!-- Custom JS disini -->
+@stack('js')
