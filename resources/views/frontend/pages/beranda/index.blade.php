@@ -31,9 +31,9 @@
 @endsection
 
 @push('js')
-    <script src="{{ asset('public/assets/fe/vendor/leafletjs/petadesa.js') }}"></script>
+    <script src="{{ asset('public/assets/fe/vendor/leafletjs/kabtasik_desa.js') }}"></script>
     <script type="text/javascript">
-        var data = <?php echo $data_desa; ?>;
+        // var data = <?php echo $data_desa; ?>;
         // Create a map centered at a specific location
         var map = L.map('map').setView([-7.55, 108.22], 10);
 
