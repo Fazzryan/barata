@@ -11,7 +11,7 @@
 
         #map {
             width: 100%;
-            height: 85vh;
+            height: 85vh; 
             border-radius: 10px;
             box-shadow: 0px 2px 14px -6px rgba(66, 68, 90, 1);
         }
@@ -46,7 +46,7 @@
     <script type="text/javascript">
         
         // memunculkan posisi maps ditengah
-        var map = L.map('map',{attributionControl: false}).setView([-7.3970813, 108.2098148], 10.3);
+        var map = L.map('map',{attributionControl: false}).setView([-7.3970813, 108.2098148], 9);
 
         // Add base tile layer (OpenStreetMap)
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

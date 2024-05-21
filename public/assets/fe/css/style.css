@@ -12,6 +12,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #585a61;
+    height: 100%;
 }
 
 a {
@@ -1097,8 +1098,8 @@ section {
     height: 70px;
     bottom: 0;
     width: 100%;
+    flex-shrink: none;
 
-    background: #fff;
     padding: 0 0 30px 0;
     color: #47536e;
     font-size: 14px;

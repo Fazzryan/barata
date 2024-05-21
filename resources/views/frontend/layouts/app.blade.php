@@ -17,7 +17,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <footer id="footer" class="fixed-bottom">
     @include('frontend.layouts.app_footer')
   </footer><!-- End Footer -->
 
