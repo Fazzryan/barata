@@ -19,6 +19,17 @@ class ConLeafletKabTasik extends Controller
         return $data_desa;
     }
 
+    public function getLeaflet_totalbencana_kecamatan(){
+        $json_leaflet_kecamatan = $this->json_leaflet_kecamatan();
+
+        $data_kecamatan = array(
+            "type"     => "FeatureCollection",
+            "features" => $json_leaflet_kecamatan,
+        );
+
+        return $data_kecamatan;
+    }
+
     public function json_leaflet_desa(){
 
         $json_desa_kabtasik = file_get_contents(base_path('app/Http/Controllers/Leaflet/kabtasik_desa.json'), true);

@@ -1,0 +1,7 @@
+#loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #4a484b url('../gif/sliding_square_loader.gif') no-repeat center;
+    z-index: 999;
+}

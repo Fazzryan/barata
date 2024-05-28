@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 @push('meta-seo')
-<title>AppMaps - Infografis Bencana</title>
+<title>SIEBEN - Infografis Bencana</title>
 <meta content="" name="description">
 <meta content="" name="keywords">
 @endpush

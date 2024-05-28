@@ -65,11 +65,11 @@
     </div>
 </div> -->
 
-<div class="container py-4">
+<div class="container orz-py-3">
     <div class="copyright">
         &copy; Copyright <strong><span>SIEBEN</span></strong>. All Rights Reserved
     </div>
-    <div class="credits">
+    <!-- <div class="credits">
         Designed by <a href="https://bpbdkabtasikmalaya.id/">Ilman H Oriza, S.T</a>
-    </div>
+    </div> -->
 </div>

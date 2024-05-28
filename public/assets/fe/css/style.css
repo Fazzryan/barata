@@ -467,7 +467,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-    padding: 75px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     overflow: hidden;
 }
 
@@ -1095,14 +1095,14 @@ section {
 --------------------------------------------------------------*/
 #footer {
     position: fixed;
-    height: 70px;
+    height: 40px;
     bottom: 0;
     width: 100%;
     flex-shrink: none;
 
-    padding: 0 0 30px 0;
+    padding: 0 0 0px 0;
     color: #47536e;
-    font-size: 14px;
+    font-size: 11px;
     background: #eff2f8;
 }
 
@@ -1261,8 +1261,13 @@ section {
 #footer .credits {
     float: right;
     text-align: center;
-    font-size: 13px;
+    font-size: 11px;
     color: #47536e;
+}
+
+.orz-py-3 {
+    padding-top: 0.6rem !important;
+    padding-bottom: 1rem !important;
 }
 
 @media (max-width: 768px) {
@@ -1270,6 +1275,6 @@ section {
     #footer .credits {
         float: none;
         text-align: center;
-        padding: 5px 0;
+        padding: 0px 0;
     }
 }
