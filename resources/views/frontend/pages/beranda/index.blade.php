@@ -32,6 +32,10 @@
             padding-left: calc(var(--bs-gutter-x)* .5);
             margin-top: var(--bs-gutter-y);
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5e6c352a39b5db7dfed247741437446c98d40154
 
     </style>
 @endpush
@@ -54,6 +58,7 @@
         <br><br><br>
         <div id="map"></div>
 
+<<<<<<< HEAD
         <div class="modal fade" id="popupPencarian" tabindex="1">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -72,6 +77,8 @@
             </div>
         </div>
 
+=======
+>>>>>>> 5e6c352a39b5db7dfed247741437446c98d40154
         <div class="modal fade" id="popupLihatDetail" tabindex="1">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -87,11 +94,14 @@
                                             <td colspan="3"><div class="title-map">Lokasi Kejadian</div></td>
                                         </tr>
                                         <tr>
+<<<<<<< HEAD
                                             <td style="width:20%;"><b>Kode</b></td>
                                             <td style="width:3%;"><b>:</b></td>
                                             <td><div id="ld_kode"></div></td>
                                         </tr>
                                         <tr>
+=======
+>>>>>>> 5e6c352a39b5db7dfed247741437446c98d40154
                                             <td style="width:20%;"><b>Kab/Kota</b></td>
                                             <td style="width:3%;"><b>:</b></td>
                                             <td>Kabupaten Tasikmalaya</td>
@@ -178,9 +188,13 @@
     <script type="text/javascript">
 
         // memunculkan posisi maps ditengah
+<<<<<<< HEAD
         var map = L.map('map', {
             attributionControl: false,
         }).setView([-7.3970813, 108.2098148], 10);
+=======
+        var map = L.map('map',{attributionControl: false}).setView([-7.3970813, 108.2098148], 10);
+>>>>>>> 5e6c352a39b5db7dfed247741437446c98d40154
 
         // memunculkan Pilihan Maps
         var LayerControl = showLayerControll(map);
@@ -209,16 +223,26 @@
                 };
             },
             onEachFeature: function(feature, layer) {
+<<<<<<< HEAD
                 var kode = feature.properties.KDEPUM;
                 var kecamatan = feature.properties.WADMKC;
                 var desa = feature.properties.WADMKD;
                 
                 var id = "'"+kode+"'";
+=======
+                var kecamatan = feature.properties.WADMKC;
+                var desa = feature.properties.WADMKD;
+
+>>>>>>> 5e6c352a39b5db7dfed247741437446c98d40154
                 var nm_kecamatan = "'"+kecamatan+"'";
                 var nm_desa = "'"+desa+"'"
 
                 var popupAwal = '<b>Kecamatan :</b> ' + kecamatan +'<br>'+'<b>Desa :</b> ' + desa + '<br><br>' +
+<<<<<<< HEAD
                             '<Button onclick="popupLihatDetail('+id+','+nm_kecamatan+','+nm_desa+')" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#popupLihatDetail">Lihat Detail</Button>';
+=======
+                            '<Button onclick="popupLihatDetail('+nm_kecamatan+','+nm_desa+')" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#popupLihatDetail">Lihat Detail</Button>';
+>>>>>>> 5e6c352a39b5db7dfed247741437446c98d40154
                 layer.bindPopup(popupAwal);
             }
         }).addTo(map);
@@ -228,6 +252,12 @@
     <script>
         function popupLihatDetail(id,kec,desa){
             document.getElementById("ld_kode").textContent  = id;
+            document.getElementById("ld_kecamatan").textContent  = kec;
+            document.getElementById("ld_desa").textContent  = desa;
+        };
+    </script>
+    <script>
+        function popupLihatDetail(kec,desa){
             document.getElementById("ld_kecamatan").textContent  = kec;
             document.getElementById("ld_desa").textContent  = desa;
         };
