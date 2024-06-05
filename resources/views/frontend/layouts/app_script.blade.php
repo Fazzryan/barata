@@ -1,5 +1,6 @@
 <!-- Vendor JS Files -->
 <script src="{{ asset('public/assets/fe/vendor/aos/aos.js') }}"></script>
+
 <script src="{{ asset('public/assets/fe/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('public/assets/fe/js/jquery-3.7.1.min.js') }}"></script>
 <script src="{{ asset('public/assets/fe/vendor/glightbox/js/glightbox.min.js') }}"></script>

@@ -14,7 +14,14 @@ class ConPetaBencana extends Controller
 
         $data_peta = json_encode($ConLeafletKabTasik->getLeaflet_totalbencana_kecamatan());
 
-        return view('frontend.pages.peta_bencana.peta_kecamatan',compact('data_peta'));
+        $kecamatan = DB::table('tbl_reff_kode_kecamatan')->orderBy('nm_kecamatan', 'ASC')->get();
+        $jenis_bencana = DB::table('tbl_reff_jenisbencana')
+            ->where('tupoksi','bpbd')
+            ->where('status_jns_bencana','aktif')
+            ->orderBy('kelompok_jns_bencana', 'ASC')
+            ->get();
+
+        return view('frontend.pages.peta_bencana.peta_kecamatan',compact('data_peta','kecamatan','jenis_bencana'));
     }
 
     public function index_Petadesa(){
@@ -22,7 +29,15 @@ class ConPetaBencana extends Controller
 
         $data_peta = json_encode($ConLeafletKabTasik->getLeaflet_totalbencana_desa());
 
-        return view('frontend.pages.peta_bencana.peta_desa',compact('data_peta'));
+        $kecamatan = DB::table('tbl_reff_kode_kecamatan')->orderBy('nm_kecamatan', 'ASC')->get();
+        $desa = DB::table('tbl_reff_kode_desa')->orderBy('nm_desa', 'ASC')->get();
+        $jenis_bencana = DB::table('tbl_reff_jenisbencana')
+            ->where('tupoksi','bpbd')
+            ->where('status_jns_bencana','aktif')
+            ->orderBy('kelompok_jns_bencana', 'ASC')
+            ->get();
+
+        return view('frontend.pages.peta_bencana.peta_desa',compact('data_peta','kecamatan','desa','jenis_bencana'));
     }
 
 }

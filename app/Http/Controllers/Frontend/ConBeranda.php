@@ -6,15 +6,15 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Leaflet\ConLeafletKabTasik;
+use App\Http\Controllers\Frontend\ConPetaBencana;
 
 class ConBeranda extends Controller
 {
     public function index(){
-        $ConLeafletKabTasik = new ConLeafletKabTasik();
+        $ConPetaBencana = new ConPetaBencana();
+        $index_Petadesa = $ConPetaBencana->index_Petadesa();
 
-        $data_peta = json_encode($ConLeafletKabTasik->getLeaflet_totalbencana_desa());
-
-        return view('frontend.pages.beranda.index',compact('data_peta'));
+        return $index_Petadesa;
     }
 
 }

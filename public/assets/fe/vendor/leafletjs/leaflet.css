@@ -1,5 +1,14 @@
 /* required styles */
 
+.foo {
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin-right:4px;
+	font-size:6pt;
+	border: 1px solid rgba(0, 0, 0, .2);
+}
+
 .leaflet-pane,
 .leaflet-tile,
 .leaflet-marker-icon,
@@ -171,6 +180,9 @@
 	}
 .leaflet-right .leaflet-control {
 	margin-right: 10px;
+	}
+.leaflet-bottom .leaflet-control-zoom{
+		margin-bottom : 50px;
 	}
 
 

@@ -1550,10 +1550,16 @@
                 ]
             },
             "properties": {
-                "PROVINSI": "JAWA BARAT",
-                "KECAMATAN": "CIPATUJAH",
-                "KODE": "32.06.01",
-                "kode_siak": "320601"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "01",
+                "kd_kecamatan": "320601",
+                "KDCPUM": "32.06.01",
+                "nm_kecamatan": "Cipatujah"
             }
         },
         {
@@ -3203,9 +3209,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "KARANGNUNGGAL",
-                "KODE": "32.06.02",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320602"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "02",
+                "kd_kecamatan": "320602",
+                "KDCPUM": "32.06.02",
+                "nm_kecamatan": "Karangnunggal"
             }
         },
         {
@@ -5179,9 +5192,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "CIKALONG",
-                "KODE": "32.06.03",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320603"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "03",
+                "kd_kecamatan": "320603",
+                "KDCPUM": "32.06.03",
+                "nm_kecamatan": "Cikalong"
             }
         },
         {
@@ -7167,9 +7187,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "PANCATENGAH",
-                "KODE": "32.06.04",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320604"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "04",
+                "kd_kecamatan": "320604",
+                "KDCPUM": "32.06.04",
+                "nm_kecamatan": "Pancatengah"
             }
         },
         {
@@ -8898,9 +8925,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "CIKATOMAS",
-                "KODE": "32.06.05",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320605"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "05",
+                "kd_kecamatan": "320605",
+                "KDCPUM": "32.06.05",
+                "nm_kecamatan": "Cikatomas"
             }
         },
         {
@@ -9918,9 +9952,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "CIBALONG",
-                "KODE": "32.06.06",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320606"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "06",
+                "kd_kecamatan": "320606",
+                "KDCPUM": "32.06.06",
+                "nm_kecamatan": "Cibalong"
             }
         },
         {
@@ -10637,9 +10678,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "PARUNGPONTENG",
-                "KODE": "32.06.07",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320607"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "07",
+                "kd_kecamatan": "320607",
+                "KDCPUM": "32.06.07",
+                "nm_kecamatan": "Parungponteng"
             }
         },
         {
@@ -12077,9 +12125,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "BANTARKALONG",
-                "KODE": "32.06.08",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320608"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "08",
+                "kd_kecamatan": "320608",
+                "KDCPUM": "32.06.08",
+                "nm_kecamatan": "Bantarkalong"
             }
         },
         {
@@ -12888,9 +12943,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "BOJONGASIH",
-                "KODE": "32.06.09",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320609"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "09",
+                "kd_kecamatan": "320609",
+                "KDCPUM": "32.06.09",
+                "nm_kecamatan": "Bojongasih"
             }
         },
         {
@@ -13855,9 +13917,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "CULAMEGA",
-                "KODE": "32.06.10",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320610"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "10",
+                "kd_kecamatan": "320610",
+                "KDCPUM": "32.06.10",
+                "nm_kecamatan": "Culamega"
             }
         },
         {
@@ -15132,9 +15201,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "BOJONGGAMBIR",
-                "KODE": "32.06.11",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320611"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "11",
+                "kd_kecamatan": "320611",
+                "KDCPUM": "32.06.11",
+                "nm_kecamatan": "Bojonggambir"
             }
         },
         {
@@ -16242,9 +16318,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "SODONGHILIR",
-                "KODE": "32.06.12",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320612"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "12",
+                "kd_kecamatan": "320612",
+                "KDCPUM": "32.06.12",
+                "nm_kecamatan": "Sodonghilir"
             }
         },
         {
@@ -17031,9 +17114,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "TARAJU",
-                "KODE": "32.06.13",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320613"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "13",
+                "kd_kecamatan": "320613",
+                "KDCPUM": "32.06.13",
+                "nm_kecamatan": "Taraju"
             }
         },
         {
@@ -18095,9 +18185,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "SALAWU",
-                "KODE": "32.06.14",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320614"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "14",
+                "kd_kecamatan": "320614",
+                "KDCPUM": "32.06.14",
+                "nm_kecamatan": "Salawu"
             }
         },
         {
@@ -19144,9 +19241,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "PUSPAHIANG",
-                "KODE": "32.06.15",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320615"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "15",
+                "kd_kecamatan": "320615",
+                "KDCPUM": "32.06.15",
+                "nm_kecamatan": "Puspahiang"
             }
         },
         {
@@ -20378,9 +20482,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "TANJUNGJAYA",
-                "KODE": "32.06.16",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320616"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "16",
+                "kd_kecamatan": "320616",
+                "KDCPUM": "32.06.16",
+                "nm_kecamatan": "Tanjungjaya"
             }
         },
         {
@@ -21462,9 +21573,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "SUKARAJA",
-                "KODE": "32.06.17",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320617"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "17",
+                "kd_kecamatan": "320617",
+                "KDCPUM": "32.06.17",
+                "nm_kecamatan": "Sukaraja"
             }
         },
         {
@@ -22767,9 +22885,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "SALOPA",
-                "KODE": "32.06.18",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320618"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "18",
+                "kd_kecamatan": "320618",
+                "KDCPUM": "32.06.18",
+                "nm_kecamatan": "Salopa"
             }
         },
         {
@@ -24212,9 +24337,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "JATIWARAS",
-                "KODE": "32.06.19",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320619"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "19",
+                "kd_kecamatan": "320619",
+                "KDCPUM": "32.06.19",
+                "nm_kecamatan": "Jatiwaras"
             }
         },
         {
@@ -25353,9 +25485,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "CINEAM",
-                "KODE": "32.06.20",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320620"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "20",
+                "kd_kecamatan": "320620",
+                "KDCPUM": "32.06.20",
+                "nm_kecamatan": "Cineam"
             }
         },
         {
@@ -26332,9 +26471,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "KARANG JAYA",
-                "KODE": "32.06.21",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320621"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "21",
+                "kd_kecamatan": "320621",
+                "KDCPUM": "32.06.21",
+                "nm_kecamatan": "Karangjaya"
             }
         },
         {
@@ -27760,9 +27906,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "MANONJAYA",
-                "KODE": "32.06.22",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320622"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "22",
+                "kd_kecamatan": "320622",
+                "KDCPUM": "32.06.22",
+                "nm_kecamatan": "Manonjaya"
             }
         },
         {
@@ -28921,9 +29074,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "GUNUNG TANJUNG",
-                "KODE": "32.06.23",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320623"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "23",
+                "kd_kecamatan": "320623",
+                "KDCPUM": "32.06.23",
+                "nm_kecamatan": "Gunungtanjung"
             }
         },
         {
@@ -29843,9 +30003,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "SINGAPARNA",
-                "KODE": "32.06.24",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320624"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "24",
+                "kd_kecamatan": "320624",
+                "KDCPUM": "32.06.24",
+                "nm_kecamatan": "Singaparna"
             }
         },
         {
@@ -30677,9 +30844,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "MANGUNREJA",
-                "KODE": "32.06.25",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320625"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "25",
+                "kd_kecamatan": "320625",
+                "KDCPUM": "32.06.25",
+                "nm_kecamatan": "Mangunreja"
             }
         },
         {
@@ -31364,9 +31538,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "SUKARAME",
-                "KODE": "32.06.26",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320626"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "26",
+                "kd_kecamatan": "320626",
+                "KDCPUM": "32.06.26",
+                "nm_kecamatan": "Sukarame"
             }
         },
         {
@@ -33171,9 +33352,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "CIGALONTANG",
-                "KODE": "32.06.27",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320627"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "27",
+                "kd_kecamatan": "320627",
+                "KDCPUM": "32.06.27",
+                "nm_kecamatan": "Cigalontang"
             }
         },
         {
@@ -33802,9 +33990,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "LEUWISARI",
-                "KODE": "32.06.28",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320628"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "28",
+                "kd_kecamatan": "320628",
+                "KDCPUM": "32.06.28",
+                "nm_kecamatan": "Leuwisari"
             }
         },
         {
@@ -34344,9 +34539,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "PADAKEMBANG",
-                "KODE": "32.06.29",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320629"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "29",
+                "kd_kecamatan": "320629",
+                "KDCPUM": "32.06.29",
+                "nm_kecamatan": "Padakembang"
             }
         },
         {
@@ -35206,9 +35408,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "SARIWANGI",
-                "KODE": "32.06.30",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320630"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "30",
+                "kd_kecamatan": "320630",
+                "KDCPUM": "32.06.30",
+                "nm_kecamatan": "Sariwangi"
             }
         },
         {
@@ -36283,9 +36492,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "SUKARATU",
-                "KODE": "32.06.31",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320631"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "31",
+                "kd_kecamatan": "320631",
+                "KDCPUM": "32.06.31",
+                "nm_kecamatan": "Sukaratu"
             }
         },
         {
@@ -37433,9 +37649,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "CISAYONG",
-                "KODE": "32.06.32",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320632"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "32",
+                "kd_kecamatan": "320632",
+                "KDCPUM": "32.06.32",
+                "nm_kecamatan": "Cisayong"
             }
         },
         {
@@ -38359,9 +38582,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "SUKAHENING",
-                "KODE": "32.06.33",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320633"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "33",
+                "kd_kecamatan": "320633",
+                "KDCPUM": "32.06.33",
+                "nm_kecamatan": "Sukahening"
             }
         },
         {
@@ -38967,9 +39197,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "RAJAPOLAH",
-                "KODE": "32.06.34",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320634"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "34",
+                "kd_kecamatan": "320634",
+                "KDCPUM": "32.06.34",
+                "nm_kecamatan": "Rajapolah"
             }
         },
         {
@@ -39687,9 +39924,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "JAMANIS",
-                "KODE": "32.06.35",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320635"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "35",
+                "kd_kecamatan": "320635",
+                "KDCPUM": "32.06.35",
+                "nm_kecamatan": "Jamanis"
             }
         },
         {
@@ -40608,9 +40852,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "CIAWI",
-                "KODE": "32.06.36",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320636"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "36",
+                "kd_kecamatan": "320636",
+                "KDCPUM": "32.06.36",
+                "nm_kecamatan": "Ciawi"
             }
         },
         {
@@ -41761,9 +42012,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "KADIPATEN",
-                "KODE": "32.06.37",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320637"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "37",
+                "kd_kecamatan": "320637",
+                "KDCPUM": "32.06.37",
+                "nm_kecamatan": "Kadipaten"
             }
         },
         {
@@ -43339,9 +43597,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "PAGERAGEUNG",
-                "KODE": "32.06.38",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320638"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "38",
+                "kd_kecamatan": "320638",
+                "KDCPUM": "32.06.38",
+                "nm_kecamatan": "Pagerageung"
             }
         },
         {
@@ -44029,9 +44294,16 @@
                 ]
             },
             "properties": {
-                "KECAMATAN": "SUKARESIK",
-                "KODE": "32.06.39",
-                "giskemendagri.gisadmin.Kecamatan_Spasial_22092017_2.kode_siak": "320639"
+                "KDPPUM": "32",
+                "nm_provinsi": "Jawa Barat",
+                "no_kab_kota": "06",
+                "kd_kab_kota": "3206",
+                "KDPKAB": "32.06",
+                "nm_kabupaten": "Kabupaten Tasikmalaya",
+                "no_kecamatan": "39",
+                "kd_kecamatan": "320639",
+                "KDCPUM": "32.06.39",
+                "nm_kecamatan": "Sukaresik"
             }
         }
     ]

@@ -5,14 +5,23 @@
     <meta content="" name="keywords">
 
     <link rel="stylesheet" href="{{ asset('public/assets/fe/vendor/leafletjs/leaflet.css') }}" />
-    
+    <link rel="stylesheet" href="{{ asset('public/assets/fe/vendor/datepicker/css/datepicker.css') }}" />
+
+    <link rel="stylesheet" href="{{ asset('public/assets/fe/vendor/dselect/dist/css/dselect.css') }}" />
     <style>
 
         #map {
-            width: 100%;
-            height: 85vh; 
-            border-radius: 10px;
-            box-shadow: 0px 2px 14px -6px rgba(66, 68, 90, 1);
+            width  : 100%;
+            height : 87vh;
+            margin-top:70px;
+            /* border-radius: 10px;
+            box-shadow: 0px 2px 14px -6px rgba(66, 68, 90, 1); */
+        }
+
+        body { 
+            width  : 100%;
+            height : 100%;
+            background-color: #eff2f8;
         }
 
         .title-map {
@@ -51,7 +60,6 @@
     <!-- End Breadcrumbs Section -->
     <div id="loader"></div>
     <section id="content" class="inner-page">
-        <br><br><br>
         <div id="map"></div>
 
         <div class="modal fade" id="popupPencarian" tabindex="1">
@@ -61,11 +69,65 @@
                         <h5 class="modal-title" id="modal-header">Pencarian Data Bencana</h5>
                     </div>
                     <div class="modal-body">
-                        <div class="row" style="padding-left:40px;padding-right:20px;">
-                        
+                        <div class="row" style="padding-left:20px;padding-right:20px;">
+                            <div class="row col-md-12">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="tgl_awal" class="form-label">Tgl Awal</label>
+                                        <div class="input-group date">
+                                            <div class="input-group-addon">
+                                                <span class="glyphicon glyphicon-th"></span>
+                                            </div>
+                                            <input name="tgl_awal" id="tgl_awal" placeholder="tanggal awal" type="text" class="form-control datepicker">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="tgl_akhir" class="form-label">Tgl Akhir</label>
+                                        <div class="input-group date">
+                                            <div class="input-group-addon">
+                                                <span class="glyphicon glyphicon-th"></span>
+                                            </div>
+                                            <input name="tgl_akhir" id="tgl_akhir" placeholder="tanggal akhir" type="text" class="form-control datepicker">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row col-md-12" style="margin-top:20px;">
+                                <div class="col-md-6">
+                                    <label for="cari_kecamatan" class="form-label">Kecamatan</label>
+                                    <select class="form-select" id="cari_kecamatan" name="cari_kecamatan" data-dselect-search="true" data-dselect-max-height="250px">
+                                        <option value="semua" selected>== semua kecamatan ==</option>
+                                        @foreach($kecamatan as $val_kecamatan)
+                                        <option value="{{$val_kecamatan->id}}">{{ucwords(strtolower($val_kecamatan->nm_kecamatan))}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="cari_desa" class="form-label">Desa</label>
+                                    <select class="form-select" id="cari_desa" name="cari_desa" data-dselect-search="true" data-dselect-max-height="250px">
+                                        <option value="semua" selected>== semua desa ==</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row col-md-12" style="margin-top:20px;">
+                                <div class="col-md-12">
+                                    <label for="cari_jnsbencana" class="form-label">Jenis Bencana</label>
+                                    <select class="form-select" id="cari_jnsbencana" name="cari_jnsbencana" data-dselect-search="true" data-dselect-max-height="250px">
+                                        <option value="semua" selected>== semua jenis bencana ==</option>
+                                        @foreach($jenis_bencana as $val_jenisbencana)
+                                        <option value="{{$val_jenisbencana->id}}">{{ucwords(strtolower($val_jenisbencana->jns_bencana))}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>                                
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-sm btn-success" data-bs-dismiss="modal">Cari Data</button>
                         <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Tutup</button>
                     </div>
                 </div>
@@ -162,9 +224,12 @@
 @endsection
 
 @push('js')
+    <script src="{{ asset('public/assets/fe/vendor/datepicker/js/bootstrap-datepicker.js') }}"></script>
+    <script src="{{ asset('public/assets/fe/vendor/dselect/dist/js/dselect.js') }}"></script>
+    
     <script src="{{ asset('public/assets/fe/vendor/leafletjs/leaflet.js') }}"></script>
     <script src="{{ asset('public/assets/fe/vendor/leafletjs/plugins/script.js') }}"></script>
-    
+
     <script>
         var divId_preloader = document.getElementById('loader');
         var divId_content = document.getElementById('content');
@@ -180,6 +245,7 @@
         // memunculkan posisi maps ditengah
         var map = L.map('map', {
             attributionControl: false,
+            zoomControl: false
         }).setView([-7.3970813, 108.2098148], 10);
 
         // memunculkan Pilihan Maps
@@ -187,6 +253,9 @@
         LayerControl.SateliteView.addTo(map); //setting default layer
 
         // memunculkan Tombol Tambahan
+        var ZoomControll = showZoomControll('bottomright');
+        ZoomControll.addTo(map);
+
         var BtnSearch = showBtnSearch('topright','popupPencarian');
         map.addControl(new BtnSearch());
 
@@ -195,6 +264,20 @@
 
         var BtnRefreshPage = showBtnRefreshPage('topright');
         map.addControl(new BtnRefreshPage());
+
+        var InfoBencana = showInfoBencana('topleft');
+        map.addControl(new InfoBencana());
+
+        var IndeksResiko = showIndeksResiko('topleft');
+        map.addControl(new IndeksResiko());
+
+        var url_logo = "{{ URL::asset('public/assets/fe/img/a_logo_bpbdkabtasik.png') }}";
+        var ConnectionTime = showConnectionTime('topleft',url_logo);
+        map.addControl(new ConnectionTime());
+
+        var ic_signal = document.getElementById("ic_signal");
+        testConnection(ic_signal);
+        
         
         // Tambahkan layer GeoJSON Kabupaten Tasikmalaya
         var perDesaLayer = L.geoJSON(data, {
@@ -203,33 +286,109 @@
                     fillColor: "rgb(33, 134, 0)",
                     weight: 1,
                     opacity: 1,
-                    color: 'white',
+                    color: '#800026',
                     dashArray: '3',
                     fillOpacity: 0.7
                 };
             },
             onEachFeature: function(feature, layer) {
-                var kode = feature.properties.KDEPUM;
-                var kecamatan = feature.properties.WADMKC;
-                var desa = feature.properties.WADMKD;
-                
-                var id = "'"+kode+"'";
-                var nm_kecamatan = "'"+kecamatan+"'";
-                var nm_desa = "'"+desa+"'"
 
-                var popupAwal = '<b>Kecamatan :</b> ' + kecamatan +'<br>'+'<b>Desa :</b> ' + desa + '<br><br>' +
-                            '<Button onclick="popupLihatDetail('+id+','+nm_kecamatan+','+nm_desa+')" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#popupLihatDetail">Lihat Detail</Button>';
+                layer.on({
+                    mouseover: highlightFeature,
+                    mouseout: resetHighlight,
+                    // click: bindPopup
+                });
+
+                var kd_desa = feature.properties.KDEPUM;
+                var nm_kecamatan = feature.properties.nm_kecamatan;
+                var nm_desa = feature.properties.nm_desa;
+                
+                var id = "'"+kd_desa+"'";
+
+                var popupAwal = '<b>Kecamatan :</b> ' + nm_kecamatan +'<br>'+'<b>Desa :</b> ' + nm_desa + '<br><br>' +
+                            '<Button onclick="popupLihatDetail('+id+')" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#popupLihatDetail">Lihat Detail</Button>';
                 layer.bindPopup(popupAwal);
             }
         }).addTo(map);
 
+        function highlightFeature(e) {
+            var layer = e.target;
+
+            layer.setStyle({
+                weight: 2,
+                color: '#800026',
+                dashArray: '',
+                fillOpacity: 0.7
+            });
+
+            if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                layer.bringToFront();
+            }
+        }
+
+        function resetHighlight(e) {
+            perDesaLayer.resetStyle(e.target);
+        }
+
+        function getColor(d) {
+            return d > 30 ? '#ff0000' :
+                d > 15  ? 'rgb(255, 143, 0)' :
+                d > 0   ? '#FED976' : 'rgb(33, 134, 0)';
+        }
+
     </script>
 
     <script>
-        function popupLihatDetail(id,kec,desa){
-            document.getElementById("ld_kode").textContent  = id;
-            document.getElementById("ld_kecamatan").textContent  = kec;
-            document.getElementById("ld_desa").textContent  = desa;
+        function popupLihatDetail(id){
+            data.features.forEach((feature) => {
+                var KDEPUM = feature.properties.KDEPUM;
+                if (KDEPUM == id) {
+                    document.getElementById("ld_kode").textContent  = id;
+                    document.getElementById("ld_kecamatan").textContent  = feature.properties.nm_kecamatan;
+                    document.getElementById("ld_desa").textContent  = feature.properties.nm_desa;
+                }
+            });            
         };
+    </script>
+
+    <script type="text/javascript">
+        $(function(){
+            $(".datepicker").datepicker({
+                format: 'yyyy-mm-dd',
+                autoclose: true,
+                todayHighlight: true,
+            });
+        });
+
+        dselect(document.querySelector('#cari_kecamatan'));
+        dselect(document.querySelector('#cari_desa'));
+        dselect(document.querySelector('#cari_jnsbencana'));
+        
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $(function () {
+                $('#cari_kecamatan').on('change', function () {
+
+                    var id_kec = $('#cari_kecamatan').val();
+
+                    var desa_selected = [];
+                    @foreach ($desa as $val_desa)
+                        if("{{$val_desa->id_kd_kecamatan}}" == id_kec){ 
+                            desa_selected.push({"id": "{{$val_desa->id}}", "nm_desa": "{{ucwords(strtolower($val_desa->nm_desa))}}"});
+                        }
+                    @endforeach
+                    
+                    var option = $('<option selected></option>').attr("value", "semua").text("== semua desa ==");
+                    $("#cari_desa").empty().append(option).trigger('change');
+                    for (var i=0, len=desa_selected.length; i<len; i++) {
+                        $("#cari_desa").append($("<option></option>").attr("value", desa_selected[i].id).text(desa_selected[i].nm_desa));
+                    }
+                    clearSelection(document.querySelector('#cari_desa'));
+                    
+                });
+            });
+        });
     </script>
 @endpush
